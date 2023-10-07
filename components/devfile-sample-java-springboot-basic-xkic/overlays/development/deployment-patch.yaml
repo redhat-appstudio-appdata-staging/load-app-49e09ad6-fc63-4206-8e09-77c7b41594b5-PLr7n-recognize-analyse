@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-java-springboot-basic-xkic
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/test-rhtap-98-tenant/load-app-49e09ad6-fc63-4206-8e09-77c7b41594b5/devfile-sample-java-springboot-basic-xkic@sha256:b34338e8e3dc95e55122c55ae0b66bc36f02f587486010aff9b765b429eeb5a0
+        name: my-java-springboot
+        resources: {}
+status: {}
